@@ -1,0 +1,10 @@
+.row { 
+	clear: both; float: left; padding: 5px; 
+	.item { float: left; margin-right: 15px; }
+	.name { width: 200px; }
+}
+
+#newItem { 
+	display: none; position: absolute; margin-top: 100px; left: 50%; 
+	.content { position: absolute; left: -50%; padding: 10px; background: #eee; border-radius: 6px; border-bottom: solid 3px #ccc; }
+}

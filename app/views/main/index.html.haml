@@ -1,0 +1,16 @@
+- @lists.each do |phil|
+	.row
+		%input.hdnID(type="hidden" value="#{phil.id}")
+		.item.name #{phil.name}
+		%button.btnNewItem Add New Item
+
+		- @items[phil.id].each do |bob|
+			.sub
+				.text 
+					#{bob.text}
+
+#newItem
+	.content
+		What goes here?
+		%textarea#txtItemText
+		%button#btnSaveNewItem Save Me!
